@@ -2,6 +2,11 @@ CfWeekThree::Application.routes.draw do
   get "pages/home"
   resources :contacts
 
+  #get "/contacts/:id(.:format)" => "contacts#show"
+  #scope path: "pages/home" do
+  #  get "/pages/home/index(.:format)" => "contacts#show"
+  #end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
